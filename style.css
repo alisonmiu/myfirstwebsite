@@ -1,0 +1,26 @@
+body {
+	background-color:#d482ed;
+	font-family: Arial;
+}
+
+header {
+	border: 3px dotted #7712a6;
+}
+
+footer {
+	text-align: center;
+	background-color:white;
+	margin-top:15px;
+	padding:10px;
+}
+
+h1 {
+	text-align:center;
+	color:white;
+}
+
+main {
+	border: 3px dotted #7712a6;
+	margin-top:20px;
+	padding:15px;
+}
