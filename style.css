@@ -1,10 +1,38 @@
 body {
-	background-color:#d482ed;
+	background-color:white;
 	font-family: Arial;
 }
 
 header {
-	border: 3px dotted #7712a6;
+	
+}
+
+figure {
+	text-align: center;
+}
+
+/* Style the navigation menu */
+nav {
+	border-radius: 30px;
+	background-color: #182f5c;
+	width: 100%;
+	overflow: auto;
+}
+
+/* Nav links */
+
+nav a {
+	float: left;
+	padding: 22px;
+	color: white;
+	text-decoration: none;
+	font-size: 17px;
+	width: 17.6%; /* make equal width links */
+	text-align: center; /* to center text */
+}
+
+nav a:hover {
+	background-color: #8aa3d4;
 }
 
 footer {
@@ -20,7 +48,7 @@ h1 {
 }
 
 main {
-	border: 3px dotted #7712a6;
+	
 	margin-top:20px;
 	padding:15px;
 }
