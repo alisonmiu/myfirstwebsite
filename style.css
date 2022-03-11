@@ -1,14 +1,14 @@
 body {
 	background-color:white;
-	font-family: Arial;
+	font-family: cursive;
+}
+
+figure {
+	
 }
 
 header {
 	
-}
-
-figure {
-	text-align: center;
 }
 
 /* Style the navigation menu */
@@ -27,7 +27,7 @@ nav a {
 	color: white;
 	text-decoration: none;
 	font-size: 17px;
-	width: 17.6%; /* make equal width links */
+	width: 14.3%; /* make equal width links */
 	text-align: center; /* to center text */
 }
 
@@ -42,13 +42,13 @@ footer {
 	padding:10px;
 }
 
-h1 {
-	text-align:center;
-	color:white;
+section {
+	margin-left: 20px;
+	margin-top: 30px;
 }
 
-main {
-	
-	margin-top:20px;
-	padding:15px;
-}
+.cover {
+	height: 447px;
+	width: 300px;
+	padding: 80px;
+} 
