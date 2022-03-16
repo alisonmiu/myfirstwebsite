@@ -8,27 +8,66 @@
 
 <header>
 	<figure>
-		<img src="cow-logo.jpg" class="logo">
+		<img src="cow-logo.png" class="logo">
 	</figure>
+	<div class="login">
+		<label for="username">Username:</label>
+		<input type="text" name="username" id="username" placeholder="email">
+		
+		<label for="password">Password:</label>
+		<input type="password" name="password" placeholder="password">
+		<input type="submit" name="submit">
+	</div>
 </header>
 
 <nav>
-	<a class="active" href="index.html">HOME</a> 
-	<a class="active" href="favourites.html">MY FAVOURITES</a>
+	<a href="index.html">HOME</a> 
+	<a href="favourites.html">MY FAVOURITES</a>
 	<a href="whatshot.html">WHAT'S HOT</a> 
 	<a href="tvshows.html">TV SHOWS</a> 
 	<a href="movies.html">MOVIES</a> 
-	<a href="categories.html">CATEGORIES</a>
+	<a href="subscribe.html">SUBSCRIBE</a>
 </nav>
 
-<main>
-	<section>
+<main class="parent">
+	<section class="child">
 		<h1>Welcome to Moo's Revoos</h1>
 		<article>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a tincidunt nisl, a efficitur sem. Nulla facilisi. Donec cursus sodales lectus, vel volutpat sem tempor in. Pellentesque aliquet placerat luctus. Proin eget purus eget felis molestie ultrices. Aenean accumsan felis vitae libero dapibus feugiat. Ut vestibulum, ipsum sodales iaculis placerat, diam sem iaculis elit, et mollis leo libero ac sapien. Suspendisse lacinia posuere sem eget iaculis. Aliquam congue, leo eget consectetur sodales, eros diam lobortis ipsum, et scelerisque quam nisl eu neque. Vestibulum ac feugiat massa, vitae elementum sem. Praesent lectus neque, condimentum ac molestie sit amet, consectetur ac odio. Proin dolor metus, pellentesque vel orci at, vulputate facilisis libero. Maecenas et volutpat purus, quis pulvinar arcu. Nulla laoreet facilisis mattis.</p>
 
 			<p>Nulla maximus velit ac vulputate rhoncus. Nunc imperdiet accumsan dignissim. Aliquam tincidunt porta lectus, non lobortis tellus ultrices ut. Ut laoreet commodo commodo. Quisque eu est at nisi auctor tristique. Vivamus mi leo, finibus non varius ut, posuere ut purus. Sed ac metus mauris. Proin dapibus odio eleifend orci tristique, in ornare tortor pellentesque. In at neque vitae nisi rhoncus efficitur. In aliquet neque vel pellentesque placerat.</p>
+
+			<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce justo eros, tempor efficitur lorem sit amet, laoreet hendrerit erat. Nam porta, sapien ut laoreet placerat, nulla velit egestas justo, sed sagittis orci risus vel orci. Phasellus ornare consectetur nisl, quis finibus ex posuere sit amet. Etiam vitae tellus eu lacus consectetur iaculis vitae et mauris. Morbi maximus ornare sem, vitae pulvinar augue elementum vel. Praesent mi lorem, suscipit eu commodo a, viverra eget velit. Nunc eget tincidunt mauris, vitae facilisis ante. Maecenas mollis ligula rutrum lobortis hendrerit. Vestibulum non turpis elit. Curabitur nisi turpis, accumsan a justo in, luctus tempus velit.</p>
+
+			<p>Nullam volutpat a leo nec vulputate. Aenean justo lorem, rhoncus vestibulum malesuada sit amet, elementum a nulla. Duis in laoreet tortor. Nulla in feugiat tellus. Nunc ornare at lacus non venenatis. In eget sapien nec nisl tincidunt vestibulum tristique eu mi. Nam tincidunt lectus et erat maximus porttitor. Phasellus pretium est dui, sed placerat mi condimentum volutpat. Curabitur maximus lectus sit amet sapien rhoncus maximus. Nullam blandit facilisis augue, quis bibendum tortor rhoncus vel. Fusce semper sem metus, vel varius orci efficitur ut. Vestibulum eget mi dapibus, dictum libero at, bibendum odio. Nulla varius lacinia suscipit.</p>
+
+			<p>Vivamus nec ante sed lectus semper malesuada. In interdum, nunc in semper pellentesque, est massa tempor turpis, nec gravida lectus tellus ut est. Aenean ornare eu enim at sollicitudin. Quisque id justo eget leo mattis aliquet id quis risus. Duis in elit vel erat tincidunt condimentum feugiat eu lacus. Aliquam suscipit pharetra est, ut iaculis lectus posuere quis. Vestibulum lobortis, odio ut lobortis venenatis, metus nulla imperdiet ante, eget rutrum velit arcu sit amet quam. Nam tincidunt lobortis odio bibendum molestie. Morbi eget massa dui. Curabitur hendrerit diam ac tincidunt egestas. Mauris pharetra, libero non vestibulum posuere, purus sapien gravida diam, sed placerat tellus nisi quis velit. Integer imperdiet mollis sem, vel bibendum mi porttitor vitae. Maecenas eget vulputate sapien. Cras sed imperdiet est. Suspendisse sodales viverra massa eget posuere.</p>
 		</article>
+	</section>
+
+	<section>
+		<div class="form">
+			<form method="post" action="http://server1">
+				<div class="text">Do you have any thoughts or comments? If you do, submit them in the form below!</div>
+				<label for="fname" name="fname">Enter your name:</label>
+				<input type="text" name="fname" id="fname">
+				<br>
+				<label for="age">Enter your age:</label>
+				<input type="number" name="age" id="age">
+				<br>
+				<label for="birthdate" name="bday">Birth Date:</label>
+				<input type="Date" name="bday" id="bday">
+				<br>
+				<label for="color" name='color'>Favourite Colour</label>
+				<input type="color" name="color" id="color">
+				<br>
+				<label for="comments">Comments:</label>
+				<br>
+				<textarea rows="10" cols="30" name="comments"></textarea>
+				<br>
+				<input type="submit" value="Submit">
+		</form>
+	</div>
 	</section>
 	
 </main>

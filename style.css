@@ -1,14 +1,12 @@
 body {
-	background-color:white;
+	background-color:#edceeb;
 	font-family: cursive;
 }
 
-figure {
-	
-}
-
-header {
-	
+.login
+{
+float: right;
+padding-bottom: 20px;
 }
 
 /* Style the navigation menu */
@@ -17,6 +15,7 @@ nav {
 	background-color: #182f5c;
 	width: 100%;
 	overflow: auto;
+	display: flex;
 }
 
 /* Nav links */
@@ -27,7 +26,7 @@ nav a {
 	color: white;
 	text-decoration: none;
 	font-size: 17px;
-	width: 14.3%; /* make equal width links */
+	width: 16.7%; /* make equal width links */
 	text-align: center; /* to center text */
 }
 
@@ -44,11 +43,37 @@ footer {
 
 section {
 	margin-left: 20px;
-	margin-top: 30px;
+	margin-top: 10px;
 }
 
 .cover {
-	height: 447px;
-	width: 300px;
-	padding: 80px;
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 } 
+
+.cover img {
+	width: 300px;
+	height: 447px;
+	margin-bottom: 20px;
+}
+
+form {
+	padding: 10px;
+	background: #8a5a87;
+	display: inline-block;
+	text-align: left;
+}
+
+.form
+{
+	display: flex;
+}
+
+main.parent
+{
+	display: flex;
+}
+
+
