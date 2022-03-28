@@ -3,6 +3,11 @@ body {
 	font-family: cursive;
 }
 
+.login {
+	text-align: right;
+	margin: 0 10px 10px 0;
+}
+
 /* Style the navigation menu */
 nav {
 	border-radius: 30px;
