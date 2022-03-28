@@ -3,18 +3,10 @@ body {
 	font-family: cursive;
 }
 
-.login
-{
-float: right;
-padding-bottom: 20px;
-}
-
 /* Style the navigation menu */
 nav {
 	border-radius: 30px;
 	background-color: #182f5c;
-	width: 100%;
-	overflow: auto;
 	display: flex;
 }
 
@@ -24,7 +16,7 @@ nav a {
 	float: left;
 	padding: 22px;
 	color: white;
-	text-decoration: none;
+	text-decoration: none; /* to get rid of underline in link */
 	font-size: 17px;
 	width: 16.7%; /* make equal width links */
 	text-align: center; /* to center text */
@@ -34,16 +26,20 @@ nav a:hover {
 	background-color: #8aa3d4;
 }
 
-footer {
-	text-align: center;
-	background-color:white;
-	margin-top:15px;
-	padding:10px;
-}
-
 section {
 	margin-left: 20px;
 	margin-top: 10px;
+}
+
+h1 {
+	border-bottom: 3px solid #182f5c;
+	font-family: fantasy;
+}
+
+.review {
+	display: flex;
+	margin-top: 30px;
+	gap: 20px 20px;
 }
 
 .cover {
@@ -59,21 +55,40 @@ section {
 	margin-bottom: 20px;
 }
 
-form {
-	padding: 10px;
-	background: #8a5a87;
-	display: inline-block;
+footer {
+	background-color: #182f5c;
+	color: white; /* text color */
 	text-align: left;
+	margin-top:15px;
+	padding:10px;
+	display: flex; /* aligning the class to a section in the footer */
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
-.form
+.row
 {
 	display: flex;
 }
 
-main.parent
+.row label
 {
-	display: flex;
+	width: 35%;
 }
 
+ul.noBullets {
+	list-style-type: none;
+	padding: 0px;
+	margin:  0px;
+
+}
+
+.subscribe
+{
+}
+
+.followUs
+{
+	
+}
 

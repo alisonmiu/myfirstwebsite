@@ -9,15 +9,9 @@
 <header>
 	<figure>
 		<img src="cow-logo.png" class="logo">
+		<input type="text" name="search" size="30" placeholder="Search movies, TV, actors, more...">
+		<input type="submit" name="Search">
 	</figure>
-	<div class="login">
-		<label for="username">Username:</label>
-		<input type="text" name="username" id="username" placeholder="email">
-		
-		<label for="password">Password:</label>
-		<input type="password" name="password" placeholder="password">
-		<input type="submit" name="submit">
-	</div>
 </header>
 
 <nav>
@@ -30,50 +24,93 @@
 </nav>
 
 <main class="parent">
-	<section class="child">
-		<h1>Welcome to Moo's Revoos</h1>
-		<article>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a tincidunt nisl, a efficitur sem. Nulla facilisi. Donec cursus sodales lectus, vel volutpat sem tempor in. Pellentesque aliquet placerat luctus. Proin eget purus eget felis molestie ultrices. Aenean accumsan felis vitae libero dapibus feugiat. Ut vestibulum, ipsum sodales iaculis placerat, diam sem iaculis elit, et mollis leo libero ac sapien. Suspendisse lacinia posuere sem eget iaculis. Aliquam congue, leo eget consectetur sodales, eros diam lobortis ipsum, et scelerisque quam nisl eu neque. Vestibulum ac feugiat massa, vitae elementum sem. Praesent lectus neque, condimentum ac molestie sit amet, consectetur ac odio. Proin dolor metus, pellentesque vel orci at, vulputate facilisis libero. Maecenas et volutpat purus, quis pulvinar arcu. Nulla laoreet facilisis mattis.</p>
-
-			<p>Nulla maximus velit ac vulputate rhoncus. Nunc imperdiet accumsan dignissim. Aliquam tincidunt porta lectus, non lobortis tellus ultrices ut. Ut laoreet commodo commodo. Quisque eu est at nisi auctor tristique. Vivamus mi leo, finibus non varius ut, posuere ut purus. Sed ac metus mauris. Proin dapibus odio eleifend orci tristique, in ornare tortor pellentesque. In at neque vitae nisi rhoncus efficitur. In aliquet neque vel pellentesque placerat.</p>
-
-			<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce justo eros, tempor efficitur lorem sit amet, laoreet hendrerit erat. Nam porta, sapien ut laoreet placerat, nulla velit egestas justo, sed sagittis orci risus vel orci. Phasellus ornare consectetur nisl, quis finibus ex posuere sit amet. Etiam vitae tellus eu lacus consectetur iaculis vitae et mauris. Morbi maximus ornare sem, vitae pulvinar augue elementum vel. Praesent mi lorem, suscipit eu commodo a, viverra eget velit. Nunc eget tincidunt mauris, vitae facilisis ante. Maecenas mollis ligula rutrum lobortis hendrerit. Vestibulum non turpis elit. Curabitur nisi turpis, accumsan a justo in, luctus tempus velit.</p>
-
-			<p>Nullam volutpat a leo nec vulputate. Aenean justo lorem, rhoncus vestibulum malesuada sit amet, elementum a nulla. Duis in laoreet tortor. Nulla in feugiat tellus. Nunc ornare at lacus non venenatis. In eget sapien nec nisl tincidunt vestibulum tristique eu mi. Nam tincidunt lectus et erat maximus porttitor. Phasellus pretium est dui, sed placerat mi condimentum volutpat. Curabitur maximus lectus sit amet sapien rhoncus maximus. Nullam blandit facilisis augue, quis bibendum tortor rhoncus vel. Fusce semper sem metus, vel varius orci efficitur ut. Vestibulum eget mi dapibus, dictum libero at, bibendum odio. Nulla varius lacinia suscipit.</p>
-
-			<p>Vivamus nec ante sed lectus semper malesuada. In interdum, nunc in semper pellentesque, est massa tempor turpis, nec gravida lectus tellus ut est. Aenean ornare eu enim at sollicitudin. Quisque id justo eget leo mattis aliquet id quis risus. Duis in elit vel erat tincidunt condimentum feugiat eu lacus. Aliquam suscipit pharetra est, ut iaculis lectus posuere quis. Vestibulum lobortis, odio ut lobortis venenatis, metus nulla imperdiet ante, eget rutrum velit arcu sit amet quam. Nam tincidunt lobortis odio bibendum molestie. Morbi eget massa dui. Curabitur hendrerit diam ac tincidunt egestas. Mauris pharetra, libero non vestibulum posuere, purus sapien gravida diam, sed placerat tellus nisi quis velit. Integer imperdiet mollis sem, vel bibendum mi porttitor vitae. Maecenas eget vulputate sapien. Cras sed imperdiet est. Suspendisse sodales viverra massa eget posuere.</p>
-		</article>
-	</section>
-
 	<section>
-		<div class="form">
-			<form method="post" action="http://server1">
-				<div class="text">Do you have any thoughts or comments? If you do, submit them in the form below!</div>
-				<label for="fname" name="fname">Enter your name:</label>
-				<input type="text" name="fname" id="fname">
-				<br>
-				<label for="age">Enter your age:</label>
-				<input type="number" name="age" id="age">
-				<br>
-				<label for="birthdate" name="bday">Birth Date:</label>
-				<input type="Date" name="bday" id="bday">
-				<br>
-				<label for="color" name='color'>Favourite Colour</label>
-				<input type="color" name="color" id="color">
-				<br>
-				<label for="comments">Comments:</label>
-				<br>
-				<textarea rows="10" cols="30" name="comments"></textarea>
-				<br>
-				<input type="submit" value="Submit">
-		</form>
-	</div>
-	</section>
-	
+		<h1>My Latest Movie Reviews</h1>
+			<figure>
+				<div class="review">
+				<img src="images/lalaland.jpg">
+					<p>
+						<strong style="font-size: 25px;">La La Land</strong><br><br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at quam euismod, fringilla eros et, tempus diam. Praesent tempor nisl ante. Aliquam molestie gravida turpis et convallis. Fusce tempus ligula fermentum, congue libero id, interdum leo. Sed venenatis nibh sit amet quam dictum bibendum. Fusce vel posuere ex. Etiam in nibh augue. Nam nec placerat metus, eu ullamcorper eros.
+					</p>
+				</div>
+
+				<div class="review">
+					<img src="images/5050.jpg">
+					<p>
+					<strong style="font-size: 25px;">50 50</strong><br><br>
+					Suspendisse bibendum, neque et pretium pharetra, nunc sem placerat dui, ut scelerisque urna dui malesuada tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam ac elementum ligula. Duis ipsum elit, semper a ante et, dapibus mattis dui. Morbi posuere risus eget odio viverra euismod quis at magna. In congue eleifend enim ut elementum. Proin nulla massa, dictum ac metus ac, consectetur imperdiet metus. Nunc nec dignissim ex, at tristique nunc. Donec ac euismod enim, eget porttitor diam. Phasellus est erat, efficitur in arcu eget, porttitor pharetra lorem. Phasellus auctor mi lectus, vel egestas risus maximus vel.
+					</p>
+				</div>
+				
+				<div class="review">
+					<img src="images/forrest.jpg">
+					<p>
+					<strong style="font-size: 25px;">Forest Gump</strong><br><br>
+					Ut non ipsum non urna interdum euismod. Maecenas nunc est, malesuada vel nunc a, ornare porta sem. Vestibulum tincidunt rhoncus arcu, vel maximus nisi posuere varius. Morbi vel lorem sapien. Phasellus dapibus dui suscipit, dignissim elit non, consectetur ligula. Donec nec sapien quis ex eleifend feugiat ac non dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum eget vehicula metus, mollis accumsan tellus. Integer posuere velit tortor, a vehicula ipsum efficitur blandit. Aliquam faucibus eleifend urna sed euismod. Ut at massa lobortis, porta massa a, porta lectus.
+					</p>
+				</div>
+			</figure>
+	</section>	
 </main>
 
 <footer>
+	<div class="movieReviews">
+		<h3>Movie Reviews</h3>
+		<ul class="noBullets">
+			<li>All Reviews</li>
+			<li>Cast and crew</li>
+		</ul>
+	</div>
 
+	<div class="movieGenre">
+		<h3>Movie Genres</h3>
+		<ul class="noBullets">
+			<li>Action</li>
+			<li>Documentary</li>
+			<li>Drama</li>
+			<li>Horror</li>
+			<li>Mystery</li>
+			<li>Netflix</li>
+			<li>Romance</li>
+			<li>Science Fiction</li>
+			<li>Suspense</li>
+			<li>Thriller</li>
+		</ul>
+	</div>
+
+	<div class="blogs">
+		<h3>Blogs</h3>
+		<ul class="noBullets">
+			<li>Reviews</li>
+			<li>TV/Streaming</li>
+		</ul>
+	</div>
+
+	<div class="subscribe">
+		<h3>Subscribe</h3>
+		<div class="row">
+			<label for="firstName">First Name:</label>
+			<input type="text" name="firstName">
+		</div>
+		<div class="row">
+			<label for="lastName">Last Name:</label>
+			<input type="text" name="lastName">
+		</div>
+		<div class="row">
+			<label for="email">Email:</label>
+			<input type="text" name="email" placeholder="Email Address">
+		</div>
+		<input type="submit" name="Submit">
+	</div>
+
+	<div class="followUs">
+		<h3>Follow Me</h3>
+		<figure>
+			<a href="https://www.instagram.com/"><img src="images/instaicon.png"></a>
+			<a href="https://www.youtube.com/"><img src="images/yticon.png"></a>
+		</figure>
+	</div>
 </footer>
 
 </body>
