@@ -1,34 +1,52 @@
+html {
+	font-size: 20px;
+}
+
 body {
 	background-color:#edceeb;
 	font-family: Arial;
 }
 
-.login {
-	text-align: right;
-	margin: 0 10px 10px 0;
-}
-
-/* Style the navigation menu */
-nav {
-	border-radius: 30px;
-	background-color: #182f5c;
+.logo-nav {
 	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-/* Nav links */
-
-nav a {
-	float: left;
-	padding: 22px;
-	color: white;
-	text-decoration: none; /* to get rid of underline in link */
-	font-size: 17px;
-	width: 16.7%; /* make equal width links */
-	text-align: center; /* to center text */
+img {
+	max-width: 100%;
 }
 
-nav a:hover {
-	background-color: #8aa3d4;
+.logo {
+	flex-basis: 65%; /* the space between the logo and nav bar */
+}
+
+.searchbar {
+	display: flex;
+	justify-content: center;
+}
+
+/* Desktop navigation menu */
+@media screen and (min-width: 600px) /* shrinks down to mobile friendly look */ 
+{
+	nav {
+		border-radius: 30px;
+		background-color: #182f5c;
+		display: flex;
+	}
+
+	/* nav links */
+	nav a {
+		float: left;
+		padding: 22px;
+		color: white;
+		text-decoration: none; /* to get rid of underline in link */
+		font-size: 17px;
+	}
+
+	nav a:hover {
+		background-color: #8aa3d4;
+	}
 }
 
 section {
@@ -41,12 +59,10 @@ h1 {
 	font-family: fantasy;
 }
 
-.review {
-	display: flex;
-	margin-top: 30px;
-	gap: 20px 20px;
+.films img {
+	width: 165px;
+	height: 250px;
 }
-
 .cover {
 	margin-top: 30px;
 	display: flex;
@@ -86,14 +102,5 @@ ul.noBullets {
 	padding: 0px;
 	margin:  0px;
 
-}
-
-.subscribe
-{
-}
-
-.followUs
-{
-	
 }
 

@@ -1,71 +1,69 @@
 <html>
 <head>
-	<title>Home</title>
+	<title>Moos Reviews</title>
 	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
 <header>
-	<figure>
-		<img src="cow-logo.png" class="logo">
-		<input type="text" name="search" size="30" placeholder="Search movies, TV, actors, more...">
-		<input type="submit" name="Search">
-	</figure>
+	<div class="logo-nav">
+		<div class="logo">
+			<a href="index.html"><img src="cow-logo.png" class="logo"></a>
+			<div class="searchbar">
+				<input type="text" name="search" size="30" placeholder="Search movies, TV, actors, more...">
+				<input type="submit" name="Search">
+			</div>
+		</div>
 
-	<div class="login">
-		<label for="username">Username:</label>
-		<input type="text" name="username" id="username" placeholder="email">
-		
-		<label for="password">Password:</label>
-		<input type="password" name="password" placeholder="password">
-		<input type="submit" name="submit" value="Login">
-		<input type="submit" name="signup" value="Sign Up">
+		<nav>
+			<a href="movies.html">MOVIES</a>
+			<a href="tvshows.html">TV SHOWS</a>
+			<a href="podcasts.html">PODCASTS</a>
+			<a href="news.html">NEWS</a>
+			<a href="contact.html">CONTACT</a>
+		</nav>
 	</div>
 </header>
 
-<nav>
-	<a href="index.html">HOME</a> 
-	<a href="favourites.html">MY FAVOURITES</a>
-	<a href="movies.html">MOVIES</a> 
-	<a href="tvshows.html">TV SHOWS</a> 
-	<a href="news.html">NEWS</a> 
-</nav>
-
 <main class="parent">
 	<section>
-		<h1>My Latest Movie Reviews</h1>
-			<figure>
-				<div class="review">
-					<img src="images/lalaland.jpg">
-					<div>
-						<h2>La La Land</h2>
-						<p>
-							When Sebastian, a pianist, and Mia, an actress, follow their passion and achieve success in their respective fields, they find themselves torn between their love for each other and their careers.
-						</p>
-					</div>
-				</div>
+		<h1>New & Upcoming Movies</h1>		
+		<div class="films">
+			<img src="images/morbius.jpg">
+			<img src="images/lostcity.jpg">
+			<img src="images/contractor.jpg">
+			<img src="images/fatherstu.jpg">
+			<img src="images/namelessdays.jpg">
+			<img src="images/nitram.jpg">
+			<img src="images/ywba.jpg">
+			<img src="images/aha.jpg">
+			<img src="images/room203.jpg">
+			<img src="images/sonic.jpg">
+		</div>
 
-				<div class="review">
-					<img src="images/5050.jpg">
-					<div>
-						<h2>50/50</h2>
-						<p>						
-							Adam is a 27-year-old radio journalist whose life turns upside down when he is diagnosed with spinal cancer. Whilst battling the rare disease, he learns the value of friendship and love.
-						</p>
-					</div>
-				</div>
-				
-				<div class="review">
-					<img src="images/forrest.jpg">
-					<div>
-						<h2>Forrest Gump</h2>
-						<p>
-							Forrest, a man with low IQ, recounts the early years of his life when he found himself in the middle of key historical events. All he wants now is to be reunited with his childhood sweetheart, Jenny.
-						</p>
-					</div>
-				</div>
-			</figure>
+		<h1>Popular in Theaters</h1>
+		<div class="films">
+			<img src="images/lostcity.jpg">
+			<img src="images/batman.jpg">
+			<img src="images/jujutsu.jpg">
+			<img src="images/dog.jpg">
+		</div>
+
+		<h1>Best Superhero Movies</h1>
+		<div class="films">
+			<img src="images/spiderman.jpg">
+			<img src="images/spiderverse.jpg">
+			<img src="images/batman.jpg">
+			<img src="images/deadpool.jpg">
+		</div>
+
+		<h1>Best Series on Netflix</h1>
+		<div class="films">
+			<img src="images/cobra.jpg">
+			<img src="images/friends.jpg">
+		</div>
 	</section>	
 </main>
 
