@@ -46,7 +46,7 @@ nav a:hover {
 	background-color: #8aa3d4;
 }
 
-.grid {
+.grid-container {
 	display: grid;
 	grid-template-columns: auto auto;
 }
@@ -64,15 +64,13 @@ nav a:hover {
 	list-style-type: none;
 }
 
+.main {
+	margin-left: 20px;
+}
+
 .sideNav a {
 	color: white;
 	text-decoration: none;
-}
-
-
-section {
-	margin-left: 20px;
-	margin-top: 10px;
 }
 
 h1 {
