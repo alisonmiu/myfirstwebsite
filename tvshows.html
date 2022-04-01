@@ -10,48 +10,83 @@
 <body>
 
 <header>
-	<figure>
-		<img src="cow-logo.png" class="logo">
-		<input type="text" name="search" size="30" placeholder="Search movies, TV, actors, more...">
-		<input type="submit" name="Search">
-	</figure>
+	<div class="logo-nav">
+		<div class="logo">
+			<a href="index.html"><img/ src="cow-logo.png" class="logo"></a>
+			<div class="searchbar">
+				<input type="text" name="search" size="30" placeholder="Search movies, TV, actors, more...">
+				<input type="submit" name="Search">
+			</div>
+		</div>
 
-	<div class="login">
-		<label for="username">Username:</label>
-		<input type="text" name="username" id="username" placeholder="email">
-		
-		<label for="password">Password:</label>
-		<input type="password" name="password" placeholder="password">
-		<input type="submit" name="submit" value="Login">
-		<input type="submit" name="signup" value="Sign Up">
+		<nav>
+			<a href="movies.html">MOVIES</a>
+			<a href="tvshows.html">TV SHOWS</a>
+			<a href="podcasts.html">PODCASTS</a>
+			<a href="news.html">NEWS</a>
+			<a href="contact.html">CONTACT</a>
+		</nav>
 	</div>
 </header>
 
-	<nav>
-		<a href="index.html">HOME</a> 
-		<a href="favourites.html">MY FAVOURITES</a>
-		<a href="movies.html">MOVIES</a> 
-		<a href="tvshows.html">TV SHOWS</a> 
-		<a href="news.html">NEWS</a>
-	</nav>
+<main class="grid">
+	<div class="sideNav">
+		<strong>WHAT'S NEW</strong>
+		<li>
+			<ul><a href="">Julia: Season 1</a></ul>
+			<ul><a href="">How We Roll: Season 1</a></ul>
+			<ul><a href="">The Fairly OddParents: Fairly Odder: Season 1</a></ul>
+			<ul><a href="">Brene Brown: Atlas of the Heart: Season 1</a></ul>
+			<ul><a href="">Rat in the Kitchen: Season 1</a></ul>
+		</li>
+		<strong>MOST POPULAR ON MR</strong>
+		<li>
+			<ul><a href="">Moon Knight: Season 1</a></ul>
+			<ul><a href="">The Girl From Plainville: Limited Series</a></ul>
+			<ul><a href="">Halo: Season 1</a></ul>
+			<ul><a href="">Bridgerton: Season 2</a></ul>
+			<ul><a href="">The Academy Awards: 94th Oscars</a></ul>
+			<ul><a href="">Pachinko: Season 1</a></ul>
+		</li>
+		<strong>TOP COMEDY SERIES</strong>
+		<li>
+			<ul><a href="">Abbott Elementary: Season 1</a></ul>
+			<ul><a href="">The Great: Season 2</a></ul>
+			<ul><a href="">The Sex Lives of College Girls</a></ul>
+			<ul><a href="">Dickinson: Season 3</a></ul>
+			<ul><a href="">Hacks: Season 1</a></ul>
+			<ul><a href="">Reservation Dogs: Season 1</a></ul>
+			<ul><a href="">Feel Good: Season 2</a></ul>
+			<ul><a href="">Search Party: Season 4</a></ul>
+			<ul><a href="">The Other Two: Season 2</a></ul>
+			<ul><a href="">Made for Love: Season 1</a></ul>
+		</li>
+		<strong>TOP FANTASY SERIES</strong>
+		<li>
+			<ul><a href="">Archive 81: Season 1</a></ul>
+			<ul><a href="">Peacemaker: Season 1</a></ul>
+			<ul><a href="">Evil: Season 2</a></ul>
+			<ul><a href="">Chucky: Season 1</a></ul>
+		</li>
+		<strong>TOP DRAMA SERIES</strong>
+		<li>
+			<ul><a href="">Cobra Kai: Season 4</a></ul>
+			<ul><a href="">Press: Miniseries</a></ul>
+			<ul><a href="">Dexter: New Blood: Season 1</a></ul>
+			<ul><a href="">1883: Season 1</a></ul>
+		</li>
+	</div>
 
-	<main>
-		<h1>Sitcoms</h1>
-			<div class="cover">
-				<img src="images/fobcover.jpg">
-				<img src="images/raymondcover.jpg">
-				<img src="images/gleecover.jpg">
-				<img src="images/friendscover.jpg">
-			</div>
-		<h1>Reality TV</h1>
-			<div class="cover">
-				<img src="images/bachelorcover.jpg">
-				<img src="images/lib.jpg">
-				<img src="images/mc.jpg">
-				<img src="images/survivor.jpg">
-				<img src="images/hellskitchen.jpg">
-			</div>
-	</main>
+	<section style="margin-left:-220px;">
+		<div>
+			<h1>TV Shows</h1>
+			<img src="images/dakota.jpg" style="width: 165px; height: 250px;">
+
+		</div>
+	</section>
+
+</main>
+
 <footer>
 	<div class="movieReviews">
 		<h3>Movie Reviews</h3>

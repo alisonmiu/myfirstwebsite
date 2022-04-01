@@ -1,52 +1,37 @@
 <html>
 <head>
-	<title>FAVOURITES</title>
+	<title>Moos Reviews</title>
 	<link rel="stylesheet" href="style.css">
+	<script defer src="script.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
 <header>
-	<figure>
-		<img src="cow-logo.png" class="logo">
-		<input type="text" name="search" size="30" placeholder="Search movies, TV, actors, more...">
-		<input type="submit" name="Search">
-	</figure>
+	<div class="logo-nav">
+		<div class="logo">
+			<a href="index.html"><img/ src="cow-logo.png" class="logo"></a>
+			<div class="searchbar">
+				<input type="text" name="search" size="30" placeholder="Search movies, TV, actors, more...">
+				<input type="submit" name="Search">
+			</div>
+		</div>
 
-	<div class="login">
-		<label for="username">Username:</label>
-		<input type="text" name="username" id="username" placeholder="email">
-		
-		<label for="password">Password:</label>
-		<input type="password" name="password" placeholder="password">
-		<input type="submit" name="submit" value="Login">
-		<input type="submit" name="signup" value="Sign Up">
+		<nav>
+			<a href="movies.html">MOVIES</a>
+			<a href="tvshows.html">TV SHOWS</a>
+			<a href="podcasts.html">PODCASTS</a>
+			<a href="news.html">NEWS</a>
+			<a href="contact.html">CONTACT</a>
+		</nav>
 	</div>
 </header>
 
-<nav>
-	<a href="index.html">HOME</a> 
-	<a href="favourites.html">MY FAVOURITES</a>
-	<a href="movies.html">MOVIES</a> 
-	<a href="tvshows.html">TV SHOWS</a> 
-	<a href="news.html">NEWS</a>
-</nav>
-
-<main>
-	<div class="cover">
-		<img src="images/karatekidcover.jpg">
-		<img src="images/rushhourcover.jpg">
-		<img src="images/mrbeancover.jpg">
-		<img src="images/shrekcover.png">
-		<img src="images/meangirlscover.jpg">
-		<img src="images/spidermancover.jpg">
-		<img src="images/titaniccover.jpg">
-		<img src="images/hairspraycover.jpg">
-		<img src="images/40yocover.jpg">
-		<img src="images/somcover.jpg">
-		<img src="images/jokercover.jpg">
-		<img src="images/mulancover.jpg">
-	</div>
+<main class="parent">
+	<section>
+		
+	</section>	
 </main>
 
 <footer>
@@ -111,4 +96,3 @@
 </body>
 
 </html>
-

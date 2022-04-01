@@ -10,30 +10,50 @@
 <body>
 
 <header>
-	<figure>
-		<img src="cow-logo.png" class="logo">
-		<input type="text" name="search" size="30" placeholder="Search movies, TV, actors, more...">
-		<input type="submit" name="Search">
-	</figure>
+	<div class="logo-nav">
+		<div class="logo">
+			<a href="index.html"><img/ src="cow-logo.png" class="logo"></a>
+			<div class="searchbar">
+				<input type="text" name="search" size="30" placeholder="Search movies, TV, actors, more...">
+				<input type="submit" name="Search">
+			</div>
+		</div>
 
-	<div class="login">
-		<label for="username">Username:</label>
-		<input type="text" name="username" id="username" placeholder="email">
-		
-		<label for="password">Password:</label>
-		<input type="password" name="password" placeholder="password">
-		<input type="submit" name="submit" value="Login">
-		<input type="submit" name="signup" value="Sign Up">
+		<nav>
+			<a href="movies.html">MOVIES</a>
+			<a href="tvshows.html">TV SHOWS</a>
+			<a href="podcasts.html">PODCASTS</a>
+			<a href="news.html">NEWS</a>
+			<a href="contact.html">CONTACT</a>
+		</nav>
 	</div>
 </header>
 
-	<nav>
-		<a href="index.html">HOME</a> 
-		<a href="favourites.html">MY FAVOURITES</a>
-		<a href="movies.html">MOVIES</a> 
-		<a href="tvshows.html">TV SHOWS</a> 
-		<a href="news.html">NEWS</a>
-	</nav>
+<main class="grid">
+	<div class="sideNav">
+		<strong>IN THEATERS</strong>
+		<li>
+			<ul><a href="movies.html">OPENING THIS WEEK</a></ul>
+			<ul><a href="topboxoffice.html">TOP BOX OFFICE</a></ul>
+			<ul><a href="comingsoon.html">COMING SOON</a></ul>
+			<ul><a href="freshmovies.html">CERTIFIED FRESH MOVIES</a></ul>
+		</li>
+	</div>
+
+
+
+	<section style="margin-left:-800px">
+		<div>
+			<h1>Coming Soon</h1>
+			<img src="images/sonic.jpg" style="width: 165px; height: 250px;">
+			<img src="images/ambulance.jpg" style="width: 165px; height: 250px;">
+			<img src="images/fatherstu.jpg" style="width: 165px; height: 250px;">
+
+		</div>
+	</section>
+
+</main>
+
 <footer>
 	<div class="movieReviews">
 		<h3>Movie Reviews</h3>
