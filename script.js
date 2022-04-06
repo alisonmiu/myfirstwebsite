@@ -7,7 +7,7 @@ images.forEach(image => {
 	image.addEventListener('click', e => {
 		lightbox.classList.add('active')
 		const img = document.createElement('img')
-		img.src = image.src
+		img.src = image.getAttribute(data-trailer)
 		while (lightbox.firstChild) {
 			lightbox.removeChild(lightbox.firstChild)
 		}
