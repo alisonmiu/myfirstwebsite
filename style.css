@@ -8,6 +8,28 @@ body {
 	margin: 0;
 }
 
+.searchbar {
+	position: relative;
+}
+
+.searchbar-inner {
+	position: absolute;
+    display: flex;
+    top: 92px;
+    left: 20px;
+}
+
+footer {
+	background-color: #182f5c;
+	color: white; /* text color */
+	text-align: left;
+	margin-top:15px;
+	padding:10px;
+	display: flex; /* aligning the class to a section in the footer */
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
 #sideNav {
 	height: 100%;
 	width: 275px;
@@ -57,6 +79,67 @@ body {
 	background-color: #8aa3d4;
 }
 
+/* CSS/Javascript popup with lightbox effect */
+
+#fade {
+	display: none;
+	position: fixed;
+	top:  0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.8;
+	opacity: .80;
+	filter: alpha(opacity=80);
+}
+
+#light {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	max-width: 600px;
+	max-height: 360px;
+	margin-left: -300px;
+	margin-top: -180px;
+	border: 2px solid #fff;
+	background-color: #fff;
+	z-index: 1002;
+	overflow: visible;
+}
+
+
+#boxclose {
+	float: right;
+	cursor: pointer;
+	color: #fff;
+	border: 1px solid #aeaeae;
+	border-radius: 3px;
+	background-color: #222222;
+	font-size: 31px;
+	font-weight: bold;
+	display: inline-block;
+	line-height: 0px;
+	padding: 11px 3px;
+	position: absolute;
+	right: 2px;
+	top: 2px;
+	z-index: 1002;
+	opacity: 0.9;
+}
+
+.boxclose:before {
+	content: "x";
+}
+
+#fade:hover ~ #boxopen {
+	display: none;
+}
+
+/* End of CSS/Javascript popup with lightbox effect styling */
+
 /* Mobile styling */
 @media only screen and (max-width: 600px) 
 {
@@ -69,6 +152,10 @@ body {
 	.logo {
 		text-align: center;
 		width: 350px;
+	}
+
+	.searchbar-inner {
+		position: unset;
 	}
 
 	.nav {
@@ -144,32 +231,13 @@ body {
 		height: 100%;
 	}
 
-} /* End of mobile styling */
-
-img {
-	max-width: 100%;
-}
-
-
-.searchbar {
-	position: relative;
-}
-
-.searchbar-inner {
-	position: absolute;
-    display: flex;
-    top: 92px;
-    left: 20px;
-}
-
-/* Mobile styling */
-/* Maxwidth = up to */
-@media only screen and (max-width: 600px) {
-	.searchbar-inner {
-		position: unset;
+	footer {
+		display: grid;
+		justify-content: center;
+		text-align: center;
 	}
-}
 
+} /* End of mobile styling */
 
 .grid-container {
 	display: grid;
@@ -203,10 +271,6 @@ h1 {
 	font-family: fantasy;
 }
 
-.films {
-	column-gap: 10px;
-}
-
 .films img {
 	width: 165px;
 	height: 250px;
@@ -235,17 +299,6 @@ h1 {
 	padding: 4px;
 	background-color: black;
 	border-bottom: 2px solid white;
-}
-
-footer {
-	background-color: #182f5c;
-	color: white; /* text color */
-	text-align: left;
-	margin-top:15px;
-	padding:10px;
-	display: flex; /* aligning the class to a section in the footer */
-	flex-wrap: wrap;
-	justify-content: space-around;
 }
 
 .row

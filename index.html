@@ -17,8 +17,8 @@
 					<input type="text" name="search" size="30" placeholder="Search movies, TV, actors, more...">
 					<input type="submit" name="Search">
 				</div>
-			</div>
-		</div>
+			</div><!-- End of searchbar -->
+		</div><!-- End of logo-area -->
 
 		<div class="nav">
 			<a href="movies.html">MOVIES</a>
@@ -27,7 +27,7 @@
 			<a href="news.html">NEWS</a>
 			<a href="contact.html">CONTACT</a>
 		</div>
-	</div>
+	</div><!-- End of logo-nav -->
 </header>
 
 <div class="main">
@@ -35,15 +35,23 @@
 		<h1 class="mobile-header">New & Upcoming Movies</h1>
 			
 		<div class="films">
-			<img src="images/movies/morbius.jpg" data-trailer="https://www.youtube.com/watch?v=WT-lF7_AF7A">
-			<img src="images/movies/contractor.jpg" data-trailer="https://www.youtube.com/watch?v=e7glvM8Xh0w">
-			<img src="images/movies/fatherstu.jpg" data-trailer="https://www.youtube.com/watch?v=DHREzAdyCPs">
-			<img src="images/movies/namelessdays.jpg" data-trailer="https://www.youtube.com/watch?v=zspNFvWsh1E">
-			<img src="images/movies/nitram.jpg" data-trailer="https://www.youtube.com/watch?v=8DK9RUl1BV4">
-			<img src="images/movies/ywba.jpg" data-trailer="https://www.youtube.com/watch?v=6-G39n2sCVU">
-			<img src="images/movies/aha.jpg" data-trailer="https://www.youtube.com/watch?v=bKyHdGN_mUo">
-			<img src="images/movies/room203.jpg" data-trailer="https://www.youtube.com/watch?v=MyHZWkKdrcA">
-			<img src="images/movies/sonic.jpg" data-trailer="https://www.youtube.com/watch?v=47r8FXYZWNU">
+
+			<div id="fade"></div>
+
+			<div id="light">
+				<a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+				<div id="lightbox-player"></div>
+			</div>
+			
+			<img src="images/movies/morbius.jpg">
+			<img src="images/movies/contractor.jpg" data-trailer="https://www.youtube.com/embed/Cg49DjYGozM">
+			<img src="images/movies/fatherstu.jpg" data-trailer="https://www.youtube.com/embed/aIbp5BknioY">
+			<img src="images/movies/namelessdays.jpg">
+			<img src="images/movies/nitram.jpg">
+			<img src="images/movies/ywba.jpg">
+			<img src="images/movies/aha.jpg">
+			<img src="images/movies/room203.jpg">
+			<img src="images/movies/sonic.jpg">
 		</div>
 
 		<h1 class="mobile-header">Popular in Theaters</h1>
@@ -106,15 +114,12 @@
 	<div class="subscribe">
 		<h3>Subscribe</h3>
 		<div class="row">
-			<label for="firstName">First Name:</label>
-			<input type="text" name="firstName">
+			<input type="text" name="firstName" placeholder="First Name">
 		</div>
 		<div class="row">
-			<label for="lastName">Last Name:</label>
-			<input type="text" name="lastName">
+			<input type="text" name="lastName" placeholder="Last Name">
 		</div>
 		<div class="row">
-			<label for="email">Email:</label>
 			<input type="text" name="email" placeholder="Email Address">
 		</div>
 		<input type="submit" name="Submit">
