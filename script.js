@@ -1,12 +1,3 @@
-window.document.onkeydown = function(e) {
-	if (!e) {
-		e = event;
-	}
-	if (e.keyCode == 27) {
-		lightbox_close();
-	}
-}
-
 // Get all film images
 let films = document.querySelectorAll(".films img");
 
@@ -24,27 +15,14 @@ films.forEach(function(image) {
 })
 
 function youtube_embed(url) {
-	let iframe = '<iframe width="560" height="315" src="' + url + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+	let iframe = '<iframe id="youtube_embed" width="560" height="315" src="' + url + '?enablejsapi=1&version=3&playerapiid=ytplayer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 	let div = document.createElement('div')
 	div.innerHTML = iframe
 	return div
 }
 
-function lightbox_open() {
-	let lightBoxVideo = document.getElementById("MorbiusVideo");
-	window.scrollTo(0, 0);
-
-	document.getElementById('light').style.display = 'block';
-
-	document.getElementById('fade').style.display = 'block';
-	lightBoxVideo.play();
-}
-
 function lightbox_close() {
-	let lightBoxVideo = document.getElementById("MorbiusVideo");
-
 	document.getElementById('light').style.display = 'none';
-
 	document.getElementById('fade').style.display = 'none';
-	lightBoxVideo.pause();
+	document.getElementById('youtube_embed').contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
 }

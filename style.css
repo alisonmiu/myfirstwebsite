@@ -30,6 +30,12 @@ footer {
 	justify-content: space-around;
 }
 
+.icons {
+	width: 30px;
+	height: auto;
+	display: none;
+}
+
 #sideNav {
 	height: 100%;
 	width: 275px;
@@ -64,9 +70,9 @@ footer {
 .nav {
 	border-radius: 30px;
 	background-color: #182f5c;
+	display: flex;
 }
 
-/* nav links */
 .nav a {
 	float: left;
 	padding: 22px;
@@ -141,8 +147,16 @@ footer {
 /* End of CSS/Javascript popup with lightbox effect styling */
 
 /* Mobile styling */
-@media only screen and (max-width: 600px) 
-{
+@media only screen and (max-width: 600px) {
+
+	.words span {
+		display: none;
+	}
+
+	.icons {
+		display: flex;
+	}
+
 	.logo-area {
 		display: flex;
 		flex-wrap: wrap;
@@ -163,6 +177,8 @@ footer {
 		bottom: 0;
 		padding: 10px;
 		z-index: 2;
+		width: 100%;
+		justify-content: space-around;
 	}
 
 	.nav a {
@@ -322,4 +338,5 @@ ul {
 	width: 560px;
 	height: 315px;
 }
+
 
